@@ -5,9 +5,9 @@ Restful JSON API built on top of Node and Express, with built-in ORM, account ma
 
 To run the tests, download the project, in the root folder of the project run: node test/restack_test
 
-To run the restack server:
+To run the restack server, create a file and execute using node:
 
-{
+```
 	restack = require('./lib/restack');
 	
 	restack.initialize({}, function(e){
@@ -25,7 +25,7 @@ To run the restack server:
 			console.log('restack failed to initialize: ' + e);
 		
 	});
+```
 
-}
 
 
