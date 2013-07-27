@@ -1,10 +1,11 @@
 var request = require('request');
+var assert = require("assert");
 
 describe('server-test', function(){
 
 	it('testCreateAccount', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -12,7 +13,7 @@ describe('server-test', function(){
 
 	it('testLogin', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -20,7 +21,7 @@ describe('server-test', function(){
 
 	it('testCreateData', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -28,7 +29,7 @@ describe('server-test', function(){
 
 	it('testGetData', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -36,7 +37,7 @@ describe('server-test', function(){
 
 	it('testFindData', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -44,7 +45,7 @@ describe('server-test', function(){
 
 	it('testUpdateData', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -60,7 +61,7 @@ describe('server-test', function(){
 
 	it('testCreateGuest', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -68,7 +69,7 @@ describe('server-test', function(){
 
 	it('testGuestInsufficientPriviledges', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 
@@ -76,7 +77,7 @@ describe('server-test', function(){
 
 	it('testGetPermissions', function(callback){
 
-		assert.fail();
+		assert.fail('test not implemented');
 
 		callback();
 

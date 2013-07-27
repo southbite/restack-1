@@ -4,7 +4,7 @@ describe('plugin-test', function(){
 
 	it('test_cache', function(callback){
 
-		assert.fail();
+		assert.fail('test_cache not implemented');
 
 		callback();
 
@@ -12,7 +12,7 @@ describe('plugin-test', function(){
 
 	it('test_session', function(callback){
 
-		assert.fail();
+		assert.fail('test_session not implemented');
 
 		callback();
 
@@ -20,7 +20,7 @@ describe('plugin-test', function(){
 
 	it('test_data', function(callback){
 
-		assert.fail();
+		assert.fail('test_data not implemented');
 
 		callback();
 
@@ -28,7 +28,7 @@ describe('plugin-test', function(){
 
 	it('test_auth', function(callback){
 
-		assert.fail();
+		assert.fail('test_auth not implemented');
 
 		callback();
 
