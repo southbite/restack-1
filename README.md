@@ -3,6 +3,8 @@ restack
 
 Restful JSON API built on top of Node and Express, with built-in ORM, account management and caching
 
+![Request flow](https://github.com/southbite/restack/blob/master/doc/stack-flow.jpg?raw=true)
+
 To run the tests, download the project, in the root folder of the project run: node test/restack_test
 
 To run the restack server, create a file and execute using node:
