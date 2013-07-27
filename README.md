@@ -7,22 +7,25 @@ To run the tests, download the project, in the root folder of the project run: n
 
 To run the restack server:
 
-restack = require('./lib/restack');
-
-restack.initialize({}, function(e){
-  
-	if (!e)
-	{
-		restack.start(function(e){
-			if (e)
-				console.log('restack failed to start: ' + e);
-			else
-				console.log('restack started successfully');
-		});
-	}
-	else
-		console.log('restack failed to initialize: ' + e);
+{
+	restack = require('./lib/restack');
 	
-});
+	restack.initialize({}, function(e){
+	  
+		if (!e)
+		{
+			restack.start(function(e){
+				if (e)
+					console.log('restack failed to start: ' + e);
+				else
+					console.log('restack started successfully');
+			});
+		}
+		else
+			console.log('restack failed to initialize: ' + e);
+		
+	});
+
+}
 
 
