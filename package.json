@@ -1,0 +1,14 @@
+{
+  "name": "RESTack",
+  "description": "A REST api built for NodeJS",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "connect": "~2.8.4",
+    "mocha": "~1.12.0",
+    "async": "~0.2.9",
+    "express": "~3.3.4",
+    "request": "~2.25.0",
+    "jugglingdb": "~0.2.0-35"
+  }
+}
