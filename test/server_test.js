@@ -3,7 +3,7 @@ var assert = require("assert");
 
 describe('server-test', function(){
 
-	it('testCreateAccount', function(callback){
+	it.skip('testCreateAccount', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -11,7 +11,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testLogin', function(callback){
+	it.skip('testLogin', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -19,7 +19,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testCreateData', function(callback){
+	it.skip('testCreateData', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -27,7 +27,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testGetData', function(callback){
+	it.skip('testGetData', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -35,7 +35,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testFindData', function(callback){
+	it.skip('testFindData', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -43,7 +43,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testUpdateData', function(callback){
+	it.skip('testUpdateData', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -51,7 +51,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testDeleteData', function(callback){
+	it.skip('testDeleteData', function(callback){
 
 		assert.fail();
 
@@ -59,7 +59,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testCreateGuest', function(callback){
+	it.skip('testCreateGuest', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -67,7 +67,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testGuestInsufficientPriviledges', function(callback){
+	it.skip('testGuestInsufficientPriviledges', function(callback){
 
 		assert.fail('test not implemented');
 
@@ -75,7 +75,7 @@ describe('server-test', function(){
 
 	});
 
-	it('testGetPermissions', function(callback){
+	it.skip('testGetPermissions', function(callback){
 
 		assert.fail('test not implemented');
 

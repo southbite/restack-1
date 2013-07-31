@@ -2,35 +2,27 @@ var assert = require("assert");
 
 describe('plugin-test', function(){
 
-	it('test_cache', function(callback){
+	it.skip('test_cache', function(callback){
 
-		assert.fail('test_cache not implemented');
-
-		callback();
+		callback('test_cache not implemented');
 
 	});
 
-	it('test_session', function(callback){
+	it.skip('test_session', function(callback){
 
-		assert.fail('test_session not implemented');
-
-		callback();
+		callback('test_session not implemented');
 
 	});
 
-	it('test_data', function(callback){
+	it.skip('test_data', function(callback){
 
-		assert.fail('test_data not implemented');
-
-		callback();
+		callback('test_data not implemented');
 
 	});
 
-	it('test_auth', function(callback){
+	it.skip('test_auth', function(callback){
 
-		assert.fail('test_auth not implemented');
-
-		callback();
+		callback('test_auth not implemented');
 
 	});
 
