@@ -1,85 +1,64 @@
 var request = require('request');
-var assert = require("assert");
 
 describe('server-test', function(){
 
 	it.skip('testCreateAccount', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testLogin', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testCreateData', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testGetData', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testFindData', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testUpdateData', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testDeleteData', function(callback){
 
-		assert.fail();
-
-		callback();
+		callback(new Error());
 
 	});
 
 	it.skip('testCreateGuest', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testGuestInsufficientPriviledges', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
 	it.skip('testGetPermissions', function(callback){
 
-		assert.fail('test not implemented');
-
-		callback();
+		callback(new Error('test not implemented'));
 
 	});
 
