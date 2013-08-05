@@ -1,17 +1,21 @@
 var config = {
 	port:7777,
 	plugins:{
-		cache:{settings:{
+		cachePlugin:{plugin:require('../lib/system/plugins/restack_cache'),options:{
 			
 		}},
-		data:{settings:{
+		dataPlugin:{plugin:require('../lib/system/plugins/restack_data'),options:{
 			connectionURL:'mongodb://127.0.0.1:27017/test'
+
 		}},
-		authentication:{settings:{
+		authPlugin:{plugin:require('../lib/system/plugins/restack_auth'),options:{
 			
 		}},
-		session:{settings:{
-			
+		sessionPlugin:{plugin:require('../lib/system/plugins/restack_session'),options:{
+
+		}},
+		inputOutputPlugin:{plugin:require('../lib/system/plugins/restack_input_output_formatter'),options:{
+
 		}}
 	},
 	middleware:{
