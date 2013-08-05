@@ -82,5 +82,13 @@ describe('server-test', function(){
 		callback();
 
 	});
+	
+	it('testGetModel', function(callback){
+
+		assert.fail('test not implemented');
+
+		callback();
+
+	});
 
 });

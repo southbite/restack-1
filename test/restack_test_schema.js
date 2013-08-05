@@ -8,7 +8,7 @@ module.exports = {
 		BlogComment:{
 			emailAddress: {type: "String", trim: true, index: true, required: true},
 			timestamp:{type:"Date", 'default':'now'},
-			postId:{type: 'ID'}
+			postId:{type: 'Id'}
 		}
 	},
 	directives:{

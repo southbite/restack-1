@@ -1,0 +1,3 @@
+- Have restack server pass itself back to its constituents, instead of being a global var
+- Restack server needs to link plugins to middleware in loop
+- pump out a js client library from public
