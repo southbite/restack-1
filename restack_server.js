@@ -11,7 +11,8 @@ restack.initialize({}, function(e){
 				console.log('restack started successfully');
 		});
 	}
-	else
+	else{
 		console.log('restack failed to initialize: ' + e);
+	}
 	
 });
