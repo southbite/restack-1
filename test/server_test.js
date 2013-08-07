@@ -62,7 +62,7 @@ describe('server-test', function(){
 
 	});
 	
-	it('testGetModel', function(callback){
+	it.skip('testGetModel', function(callback){
 
 		callback(new Error('test not implemented'));
 
