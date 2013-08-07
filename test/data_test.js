@@ -38,8 +38,6 @@ describe('data-tests', function() {
                 expect(newObj).to.have.property('deleted');
                 expect(newObj).to.have.property('accountId');
                 */
-                console.log('data_test ran');
-                console.log(user);
                 
                 callback();
             });
@@ -51,9 +49,9 @@ describe('data-tests', function() {
 
     describe('test-findOne', function() {
 
-        it('should findOne object of User', function (callback) {
+        it.skip('should findOne object of User', function (callback) {
 
-            callback('not implemented');
+            callback(new Error('not implemented'));
 
         });
     });
