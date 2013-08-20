@@ -1,6 +1,8 @@
 restack
 =======
 
+[![Build Status](https://travis-ci.org/NodeCPT/restack.png?branch=master)](https://travis-ci.org/NodeCPT/restack)
+
 NOTE: This solution is not completed yet, we have only built the tests and stubb code.
 
 Restful JSON API built on top of Node and Express, with built-in ORM, account management and caching
