@@ -1,4 +1,4 @@
-/*restack = require('../lib/restack');
+restack = require('../lib/restack');
 var plugins_test = require('./plugins_test');
 var server_test = require('./server_test');
 var async = require('async');
@@ -52,4 +52,4 @@ restack.initialize({settings:require('./restack_test_settings')}, function(e){
 	else
 		console.log('restack failed to initialize: ' + e);
 	
-});*/
+});

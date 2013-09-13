@@ -8,6 +8,8 @@ describe('data-tests', function() {
         restack.initialize({}, callback);
     });
 
+    var createdId = null;
+    
     describe('test-create', function() {
 
         it('should create object of User', function(callback) {
@@ -29,6 +31,8 @@ describe('data-tests', function() {
                 expect(newObj.firstname).to.be('name');
                 expect(newObj.lastname).to.be('surname');
 
+                createdId = newObj.id;
+                
                 /*
                 Not yet - we arent using the schema yet
                 expect(newObj).to.have.property('id');
@@ -49,10 +53,31 @@ describe('data-tests', function() {
 
     describe('test-findOne', function() {
 
-        it.skip('should findOne object of User', function (callback) {
+        it('should findOne object of User', function (callback) {
 
-            callback(new Error('not implemented'));
+        	restack.dataPlugin.findOne('User', {emailaddress:'test@example.com'}, function(err, data){
+        		expect(err).to.be(null);
+        		
+        		expect(data).to.be.ok();
+        		expect(data.password).to.be('whatevs');
+        		
+        		callback();
+        	});
+        });
+    });
+    
+    describe('test-getByID', function() {
 
+        it('should findOne object of User by ID', function (callback) {
+
+        	restack.dataPlugin.getById('User', createdId, function(err, data){
+        		expect(err).to.be(null);
+        		
+        		expect(data).to.be.ok();
+        		expect(data.password).to.be('whatevs');
+        		
+        		callback();
+        	});
         });
     });
 
