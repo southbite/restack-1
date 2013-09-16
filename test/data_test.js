@@ -80,5 +80,65 @@ describe('data-tests', function() {
         	});
         });
     });
+    
+    describe('test-find', function() {
+
+        it('should find objects of User by firstname', function (callback) {
+
+        	restack.dataPlugin.find('User', {firstname:'name'}, function(err, data){
+        		expect(err).to.be(null);
+        		
+        		expect(data).to.be.ok();
+        		expect(data.length > 0).to.be(true);
+        		
+        		callback();
+        	});
+        });
+    });
+    
+    describe('test-not find', function() {
+
+        it('should find no objects of User by firstname unknown', function (callback) {
+
+        	restack.dataPlugin.find('User', {firstname:'unknown'}, function(err, data){
+        		expect(err).to.be(null);
+        		
+        		expect(data).to.be.ok();
+        		expect(data.length == 0).to.be(true);
+        		
+        		callback();
+        	});
+        });
+    });
+    
+    describe('test-getAll', function() {
+
+        it('should find all objects of User', function (callback) {
+
+        	restack.dataPlugin.getAll('User', function(err, data){
+        		expect(err).to.be(null);
+        		
+        		expect(data).to.be.ok();
+        		expect(data.length > 0).to.be(true);
+        		
+        		callback();
+        	});
+        });
+    });
+    
+    describe('test-update', function() {
+
+        it('should update all objects of User with lastname surname to lastname = updated', function (callback) {
+
+        	restack.dataPlugin.update_criteria('User', {lastname:'surname'}, {lastname:'updated'}, null, function(err, data){
+        		expect(err).to.be(null);
+        		
+        		expect(data).to.be.ok();
+        		expect(data > 0).to.be(true);
+        		
+        		callback();
+        	});
+        });
+    });
 
 });
