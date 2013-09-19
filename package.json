@@ -1,5 +1,5 @@
 {
-  "name": "restack",
+  "name": "restack-1",
   "description": "A REST api built for NodeJS",
   "version": "0.0.1",
   "dependencies": {
@@ -25,6 +25,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/southbite/restack.git"
+    "url": "https://github.com/southbite/restack-1.git"
   }
 }
