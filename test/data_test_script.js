@@ -17,14 +17,10 @@ restack.initialize({}, function(err){
 	console.log('create many happening');
 
 	var result = restack.dataPlugin.create('User', users, function(err, newObj) {
-
-	  
 	    console.log('many results');
 	    console.log(newObj);
-	    
-	    
-	    
 	});
+	
 	*/
 	var user = {
 	    emailaddress: 'test@example.com',
