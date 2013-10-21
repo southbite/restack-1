@@ -12,7 +12,8 @@
     "redis": "~0.8.4",
     "mailgun": "~0.4.2",
     "string": "~1.5.1",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "node-uuid": "~1.4.1"
   },
   "devDependencies": {
     "mocha": "~1.12.0",

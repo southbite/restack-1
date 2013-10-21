@@ -94,7 +94,7 @@ describe('data-tests', function() {
         });
 
     });
-    
+    /*
     describe('test-getAll', function() {
 
         it('should find all objects of User', function (callback) {
@@ -173,12 +173,16 @@ describe('data-tests', function() {
         });
     });
 
+    */
+    
     describe('test-update', function() {
 
         it('should update all objects of User with lastname surname to lastname = updated', function (callback) {
 
         	restack.dataPlugin.update('User', {lastname:'surname'}, {lastname:'updated'}, null, function(err, data){
         		expect(err).to.be(null);
+        		
+        		console.log(data);
         		
         		expect(data).to.be.ok();
         		expect(data > 0).to.be(true);
@@ -188,6 +192,7 @@ describe('data-tests', function() {
         });
     });
 
+    /*
     describe('test-softdelete', function() {
 
         it('should soft delete all objects of User with emailaddress test@example.com', function (callback) {
@@ -223,6 +228,6 @@ describe('data-tests', function() {
         	});
         });
     });
-    
+    */
 
 });
