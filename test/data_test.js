@@ -94,7 +94,7 @@ describe('data-tests', function() {
         });
 
     });
-    /*
+
     describe('test-getAll', function() {
 
         it('should find all objects of User', function (callback) {
@@ -173,7 +173,7 @@ describe('data-tests', function() {
         });
     });
 
-    */
+
     
     describe('test-update', function() {
 
@@ -192,7 +192,7 @@ describe('data-tests', function() {
         });
     });
 
-    /*
+
     describe('test-softdelete', function() {
 
         it('should soft delete all objects of User with emailaddress test@example.com', function (callback) {
@@ -228,6 +228,6 @@ describe('data-tests', function() {
         	});
         });
     });
-    */
+
 
 });
