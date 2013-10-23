@@ -2,6 +2,8 @@ restack = require('./lib/restack');
 
 restack.initialize({}, function(e){
 	
+	console.log('restack initialized: ' + e);
+	
 	if (!e)
 	{
 		restack.start(function(e){
