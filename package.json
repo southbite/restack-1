@@ -16,7 +16,8 @@
     "node-uuid": "~1.4.1",
     "bcrypt": "~0.7.7",
     "jwt-simple": "~0.1.0",
-    "moment": "~2.3.1"
+    "moment": "~2.3.1",
+    "handlebars": "~1.0.12"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
