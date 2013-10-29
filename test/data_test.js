@@ -21,7 +21,7 @@ describe('data-tests', function() {
                 lastname: 'surname'
             };
 
-            var result = restack.dataPlugin.create('User', user, function(err, newObj) {
+            var result = restack.dataHelper.create('User', user, function(err, newObj) {
 
                 expect(err).to.be(null);
 
@@ -68,7 +68,7 @@ describe('data-tests', function() {
 
             console.log('create many happening');
             
-            var result = restack.dataPlugin.create('User', users, function(err, newObj) {
+            var result = restack.dataHelper.create('User', users, function(err, newObj) {
 
                 expect(err).to.be(null);
 
@@ -99,7 +99,7 @@ describe('data-tests', function() {
 
         it('should find all objects of User', function (callback) {
 
-        	restack.dataPlugin.find('User', {}, function(err, data){
+        	restack.dataHelper.find('User', {}, function(err, data){
         		expect(err).to.be(null);
         		
         		expect(data).to.be.ok();
@@ -117,7 +117,7 @@ describe('data-tests', function() {
 
         it('should findOne object of User by ID', function (callback) {
 
-        	restack.dataPlugin.find('User', {id:createdId}, function(err, data){
+        	restack.dataHelper.find('User', {id:createdId}, function(err, data){
         		expect(err).to.be(null);
         		
         		expect(data).to.be.ok();
@@ -132,7 +132,7 @@ describe('data-tests', function() {
 
         it('should find objects of User by firstname', function (callback) {
 
-        	restack.dataPlugin.find('User', {firstname:'name'}, function(err, data){
+        	restack.dataHelper.find('User', {firstname:'name'}, function(err, data){
         		expect(err).to.be(null);
         		
         		expect(data).to.be.ok();
@@ -147,7 +147,7 @@ describe('data-tests', function() {
 
         it('should find no objects of User by firstname unknown', function (callback) {
 
-        	restack.dataPlugin.find('User', {firstname:'unknown'}, function(err, data){
+        	restack.dataHelper.find('User', {firstname:'unknown'}, function(err, data){
         		expect(err).to.be(null);
         		
         		expect(data).to.be.ok();
@@ -162,7 +162,7 @@ describe('data-tests', function() {
 
         it('should find all objects of User', function (callback) {
 
-        	restack.dataPlugin.find('User', {}, function(err, data){
+        	restack.dataHelper.find('User', {}, function(err, data){
         		expect(err).to.be(null);
         		
         		expect(data).to.be.ok();
@@ -179,7 +179,7 @@ describe('data-tests', function() {
 
         it('should update all objects of User with lastname surname to lastname = updated', function (callback) {
 
-        	restack.dataPlugin.update('User', {lastname:'surname'}, {lastname:'updated'}, null, function(err, data){
+        	restack.dataHelper.update('User', {lastname:'surname'}, {lastname:'updated'}, null, function(err, data){
         		expect(err).to.be(null);
         		
         		console.log(data);
@@ -197,7 +197,7 @@ describe('data-tests', function() {
 
         it('should soft delete all objects of User with emailaddress test@example.com', function (callback) {
 
-        	restack.dataPlugin.remove('User', {emailaddress:'test@example.com'}, null, function(err, data){
+        	restack.dataHelper.remove('User', {emailaddress:'test@example.com'}, null, function(err, data){
         		expect(err).to.be(null);
         		
         		expect(data).to.be.ok();
@@ -215,7 +215,7 @@ describe('data-tests', function() {
 
         it('should hard delete all objects of User with emailaddress test@example.com', function (callback) {
 
-        	restack.dataPlugin.remove('User', {emailaddress:'test@example.com'}, {hard:true}, function(err, data){
+        	restack.dataHelper.remove('User', {emailaddress:'test@example.com'}, {hard:true}, function(err, data){
         		expect(err).to.be(null);
         		
         		expect(data).to.be.ok();

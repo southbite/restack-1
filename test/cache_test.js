@@ -27,7 +27,7 @@ describe('cache-tests', function() {
                  lastname: 'surname'
             }];
 
-            var result = restack.cachePlugin.updateAll({data:cachedObjects, keyName:'key', collection:'CacheTest', ttl:0}, function(e, count) {
+            var result = restack.cacheHelper.updateAll({data:cachedObjects, keyName:'key', collection:'CacheTest', ttl:0}, function(e, count) {
 
                 expect(e).to.be(null);
                 expect(count > 0).to.be(true);
@@ -50,7 +50,7 @@ describe('cache-tests', function() {
 	                lastname: 'surname'
 	            }
 
-	            var result = restack.cachePlugin.update({data:cachedObject, key:'3', collection:'CacheTest', ttl:0}, function(e, response) {
+	            var result = restack.cacheHelper.update({data:cachedObject, key:'3', collection:'CacheTest', ttl:0}, function(e, response) {
 
 	                expect(e).to.be(null);
 	                expect(response).to.be('OK');
@@ -66,7 +66,7 @@ describe('cache-tests', function() {
 
         it('gets a single item from cache', function(callback) {
 
-        	 restack.cachePlugin.find({collection:'CacheTest', ttl:0, key:'3'}, function(e, response) {
+        	 restack.cacheHelper.find({collection:'CacheTest', ttl:0, key:'3'}, function(e, response) {
 
         		 console.log(response);
         		 
@@ -84,7 +84,7 @@ describe('cache-tests', function() {
 
         it('gets all for collection from cache', function(callback) {
 
-        	 restack.cachePlugin.find({collection:'CacheTest', ttl:0, key:'0'}, function(e, response) {
+        	 restack.cacheHelper.find({collection:'CacheTest', ttl:0, key:'0'}, function(e, response) {
 
         		 console.log(response);
         		 
@@ -102,7 +102,7 @@ describe('cache-tests', function() {
 
         it('gets all for collection from cache', function(callback) {
 
-        	 var result = restack.cachePlugin.findAll({collection:'CacheTest', ttl:0}, function(e, response) {
+        	 var result = restack.cacheHelper.findAll({collection:'CacheTest', ttl:0}, function(e, response) {
 
         		 console.log(response);
         		 
@@ -120,7 +120,7 @@ describe('cache-tests', function() {
 
         it('gets all for a non existent collection from cache', function(callback) {
 
-        	 var result = restack.cachePlugin.findAll({collection:'NonExistent', ttl:0}, function(e, response) {
+        	 var result = restack.cacheHelper.findAll({collection:'NonExistent', ttl:0}, function(e, response) {
 
         		 console.log(response);
         		 
@@ -138,14 +138,14 @@ describe('cache-tests', function() {
 
         it('clears a single item from cache', function(callback) {
 
-        	 var result = restack.cachePlugin.clear({collection:'CacheTest', key:'3'}, function(e, response) {
+        	 var result = restack.cacheHelper.clear({collection:'CacheTest', key:'3'}, function(e, response) {
 
         		 console.log(response);
         		 
                  expect(e).to.be(null);
                  expect(response).to.be('OK');
                  
-                 restack.cachePlugin.findAll({collection:'CacheTest', ttl:0}, function(e, response) {
+                 restack.cacheHelper.findAll({collection:'CacheTest', ttl:0}, function(e, response) {
 
             		 console.log(response);
             		 
@@ -165,14 +165,14 @@ describe('cache-tests', function() {
 
         it('clears all items from cache', function(callback) {
 
-        	 var result = restack.cachePlugin.clearAll({collection:'CacheTest'}, function(e, response) {
+        	 var result = restack.cacheHelper.clearAll({collection:'CacheTest'}, function(e, response) {
 
         		 console.log(response);
         		 
                  expect(e).to.be(null);
                  expect(response).to.be(2);
                  
-                 restack.cachePlugin.findAll({collection:'CacheTest', ttl:0}, function(e, response) {
+                 restack.cacheHelper.findAll({collection:'CacheTest', ttl:0}, function(e, response) {
 
             		 console.log(response);
             		 
@@ -192,7 +192,7 @@ describe('cache-tests', function() {
 
         it('clears a single item from cache', function(callback) {
 
-        	 var result = restack.cachePlugin.clear({collection:'NoneExistent', key:'0'}, function(e, response) {
+        	 var result = restack.cacheHelper.clear({collection:'NoneExistent', key:'0'}, function(e, response) {
 
         		 console.log(response);
         		 
@@ -210,7 +210,7 @@ describe('cache-tests', function() {
 
         it('clears all items from cache', function(callback) {
 
-        	 var result = restack.cachePlugin.clearAll({collection:'NoneExistent'}, function(e, response) {
+        	 var result = restack.cacheHelper.clearAll({collection:'NoneExistent'}, function(e, response) {
 
         		 console.log(response);
         		 
