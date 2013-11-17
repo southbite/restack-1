@@ -2,7 +2,10 @@ restack = require('./lib/restack');
 
 restack.initialize({}, function(e){
 	
-	console.log('restack initialized: ' + e);
+	if (!e)
+		console.log('restack initialized OK');
+	else
+		console.log('restack initialize failed: ' + e);
 	
 	if (!e)
 	{
